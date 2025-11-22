@@ -1,0 +1,91 @@
+.main {
+    width: 100%;
+    padding: 40px 20px;
+    font-family: "Poppins", sans-serif;
+    background: #ffffff;
+    color: #1e2a3a;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #1f4fff;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    max-width: 650px;
+    margin: 20px auto;
+    color: #4a5568;
+}
+
+.hero-btn {
+    padding: 12px 28px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background: #1f4fff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background: #173bcc;
+}
+
+.features {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.features h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #1e2a3a;
+}
+
+.feature-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    background: #f3f7ff;
+    font-size: 18px;
+    color: #1e2a3a;
+    border: 1px solid #dce6ff;
+}
+
+/* STEPS */
+.steps {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.steps h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.steps ol {
+    list-style: none;
+    padding: 0;
+    font-size: 20px;
+}
+
+.steps li {
+    margin: 10px 0;
+    padding: 10px;
+    color: #1f4fff;
+    font-weight: 600;
+}

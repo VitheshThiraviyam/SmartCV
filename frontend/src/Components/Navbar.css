@@ -1,0 +1,49 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-items{
+    margin: 10px;
+}
+.nav-items a{
+    margin-left: 15px;
+    cursor: pointer;
+    color: #374151
+}
+.nav-items a:hover {
+  color: #3B82F6;
+}
+
+.head h1{
+    color: #1f4fff;
+}
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+        width: 100%;
+    }
+
+    .nav-items {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .nav-items a {
+        font-size: 16px;
+        width: auto;
+    }
+
+    .head h1 {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
