@@ -1,0 +1,99 @@
+.dashboard {
+  padding: 30px;
+  font-family: "Poppins", sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard h2 {
+  color: #1f4fff;
+  margin-bottom: 5px;
+}
+
+.dashboard p {
+  color: #374151;
+  margin-bottom: 20px;
+}
+
+.dashboard button {
+  margin: 10px 5px;
+  padding: 8px 16px;
+  background: #1f4fff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dashboard button:hover {
+  background: #173bcc;
+}
+
+.resume-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.resume-table th,
+.resume-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.resume-table th {
+  background-color: #f3f7ff;
+  color: #1e2a3a;
+}
+
+.resume-table td button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+.create-resume-btn {
+  background: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 15px 0;
+  transition: 0.3s;
+}
+
+.create-resume-btn:hover {
+  background: #45a049;
+}
+
+@media (max-width: 768px) {
+  .resume-table th,
+  .resume-table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .dashboard button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard {
+    padding: 20px;
+  }
+
+  .dashboard h2 {
+    font-size: 20px;
+  }
+
+  .resume-table th,
+  .resume-table td {
+    font-size: 12px;
+    padding: 6px;
+  }
+}

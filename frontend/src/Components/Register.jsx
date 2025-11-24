@@ -1,16 +1,29 @@
 import React, { useState } from "react";
 import './Register.css';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import axios from 'axios';
 function Register() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const navigate = useNavigate();
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("Name:", name);
-        console.log("Email:", email);
-        console.log("Password:", password);
+        try{
+            const res = await axios.post('http://localhost:5000/api/auth/register', {
+                name,
+                email,
+                password
+            });
+            alert("Registration Successfull");
+            navigate('/login');
+        }
+        catch(err)
+        {
+            console.log(err);
+            alert("Registration is Completed, Try Again");
+        }
     };
 
     return (

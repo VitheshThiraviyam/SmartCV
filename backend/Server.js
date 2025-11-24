@@ -11,6 +11,8 @@ mongoose.connect(process.env.MONGO_DB)
     .catch((err) => console.log('MongoDB connection error:', err));
 const authroutes = require('./routes/Authentication');
 app.use('/api/auth',authroutes);
+const resumeroutes = require('./routes/Createresume');
+app.use('/api/resume',resumeroutes);
 const PORT = process.env.PORT;
 app.listen(PORT, ()=> {
     console.log('server is running');

@@ -1,14 +1,28 @@
 import React, { useState } from "react";
 import './Login.css';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import axios from 'axios';
 function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const navigate = useNavigate();
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("Email:", email);
-        console.log("Password:", password);
+        try{
+            const res = await axios.post('http://localhost:5000/api/auth/login',{
+                email,
+                password
+            });
+            console.log(res);
+            localStorage.setItem("token",res.data.token);
+            alert("Login Successfull");
+            navigate('/profile');
+        }
+        catch(err)
+        {
+            alert("Invalid Informations");
+        }
     };
 
     return (
